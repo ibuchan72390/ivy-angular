@@ -54,10 +54,14 @@
     <Folder Include="src\Components\" />
     <Folder Include="src\Components\VideoPlayer\" />
     <Folder Include="src\Directives\" />
+    <Folder Include="src\Models\" />
     <Folder Include="test\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\Directives\mac-mobile-autoplay.directive.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\Models\video-source.model.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\mac-mobile-autoplay.directive.spec.ts">

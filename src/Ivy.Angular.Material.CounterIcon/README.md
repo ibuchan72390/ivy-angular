@@ -1,3 +1,0 @@
-# Ivy.Angular.Material.CounterIcon
-
-
