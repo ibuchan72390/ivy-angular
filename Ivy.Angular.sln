@@ -41,6 +41,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.VideoPlayer", "
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.FileReader", "src\Ivy.Angular.FileReader\Ivy.Angular.FileReader.njsproj", "{3298C558-0D84-4468-BAA7-55CA9854E3C5}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Pipes", "src\Ivy.Angular.Pipes\Ivy.Angular.Pipes.njsproj", "{0470478E-6C65-40EB-AF7C-98BAC31A76B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{3298C558-0D84-4468-BAA7-55CA9854E3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3298C558-0D84-4468-BAA7-55CA9854E3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3298C558-0D84-4468-BAA7-55CA9854E3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0470478E-6C65-40EB-AF7C-98BAC31A76B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0470478E-6C65-40EB-AF7C-98BAC31A76B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0470478E-6C65-40EB-AF7C-98BAC31A76B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0470478E-6C65-40EB-AF7C-98BAC31A76B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{F4B146AA-DEE8-4970-968F-7323F75DD3EE} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{F3A81341-B481-4C01-8096-480DD4FD80F3} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{3298C558-0D84-4468-BAA7-55CA9854E3C5} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{0470478E-6C65-40EB-AF7C-98BAC31A76B6} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {179B2D41-C7AA-49E0-AE4D-2F5AA4B6D9E7}
