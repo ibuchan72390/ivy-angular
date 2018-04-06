@@ -44,7 +44,9 @@
     <Content Include="src/**/**/*.css" />
     <Content Include="src\Components\VideoPlayer\video-player.component.ts" />
     <Content Include="src\Directives\mac-mobile-autoplay.directive.ts" />
-    <Content Include="src/**/*.ts" />
+    <Content Include="src\Components\VideoPlayer\video-player.component.ts" />
+    <Content Include="src\Directives\mac-mobile-autoplay.directive.ts" />
+    <Content Include="src\Models\video-source.model.ts" />
     <Content Include="src/*" />
     <Content Include="test/index.ts" />
     <Content Include="test/*.spec.ts" />
