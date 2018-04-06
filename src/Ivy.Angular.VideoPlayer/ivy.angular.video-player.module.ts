@@ -3,6 +3,7 @@
 // Angular
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { VgCoreModule } from 'videogular2/core';
 import { VgControlsModule } from 'videogular2/controls';
@@ -21,6 +22,8 @@ let imports: any[] = [
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
+
+    FlexLayoutModule
 ];
 
 let providers: any[] = [
