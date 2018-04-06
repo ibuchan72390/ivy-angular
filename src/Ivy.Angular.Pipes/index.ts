@@ -19,8 +19,8 @@ export { IvyAngularPipesModule } from './ivy.angular.pipes.module';
 
 
 // Pipes
-
-
+export { IvyAngularCapitalizeFirstLetterPipe } from './src/Pipes/capitalize-first-letter.pipe';
+export { IvyAngularCharLimitPipe } from './src/Pipes/char-limit.pipe';
 
 
 // Models
