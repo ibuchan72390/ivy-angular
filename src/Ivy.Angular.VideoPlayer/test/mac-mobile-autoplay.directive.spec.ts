@@ -2,17 +2,18 @@
 
 import { Component } from '@angular/core';
 import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { IvyWebModule } from 'ivy.angular.web';
 import { IvyAngularVideoPlayerModule } from '../ivy.angular.video-player.module';
 
 import { MacMobileAutoPlayDirective } from '../src/Directives/mac-mobile-autoplay.directive';
 
+import { OsDetectionService } from 'ivy.angular.web';
+
 describe('MacMobileAutoplayDirective', () => {
 
     let fixture: ComponentFixture<TestComponent>;
-    let component: TestComponent;
-    let sut: MacMobileAutoPlayDirective;
 
     beforeEach(() => {
 
@@ -28,28 +29,53 @@ describe('MacMobileAutoplayDirective', () => {
     });
 
 
-    it('Sample Test', () => {
+    it('MacMobileAutoPlayDirective does not append autoplay if isMac returns false', () => {
 
-        // Don't set these until here so we can override the template in each test respectively
-        //fixture = TestBed.overrideComponent(TestComponent, {
-        //    set: {
-        //        template: '<div mac-mobile-autoplay></div>'
-        //    }
-        //}).createComponent(TestComponent);
+        let osDetectorSpy: OsDetectionService = jasmine.createSpyObj('osDetector', { 'isMac': false });
 
-        fixture = TestBed.createComponent(TestComponent);
+        fixture = TestBed.overrideComponent(TestComponent, {
+            set: {
+                providers: [
+                    { provide: OsDetectionService, useValue: osDetectorSpy }
+                ]
+            }
+        }).createComponent(TestComponent);
 
-        component = fixture.componentInstance;
+        fixture.detectChanges();
 
-        sut = fixture.debugElement.injector.get(MacMobileAutoPlayDirective);
+        expect(osDetectorSpy.isMac).toHaveBeenCalledTimes(1);
 
+        let directiveEl = fixture.debugElement.query(By.directive(MacMobileAutoPlayDirective));
+
+        expect(directiveEl.nativeElement.attributes['autoplay']).toBe(undefined);
+    });
+
+    it('MacMobileAutoPlayDirective appends autoplay if isMac returns true', () => {
+
+        let osDetectorSpy: OsDetectionService = jasmine.createSpyObj('osDetector', { 'isMac': true });
+
+        fixture = TestBed.overrideComponent(TestComponent, {
+            set: {
+                providers: [
+                    { provide: OsDetectionService, useValue: osDetectorSpy }
+                ]
+            }
+        }).createComponent(TestComponent);
+
+        fixture.detectChanges();
+
+        expect(osDetectorSpy.isMac).toHaveBeenCalledTimes(1);
+
+        let directiveEl = fixture.debugElement.query(By.directive(MacMobileAutoPlayDirective));
+
+        expect(directiveEl.nativeElement.attributes['autoplay'].value).toBe('autoplay');
     });
 });
 
 
 @Component({
     selector: 'ivy-test-component',
-    template: '<div mac-mobile-autoplay></div>'
+    template: '<video mac-mobile-autoplay></video>'
 })
 export class TestComponent {
 }

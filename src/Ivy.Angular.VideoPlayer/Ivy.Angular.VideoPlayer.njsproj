@@ -42,9 +42,7 @@
     <Content Include="webpack.config.js" />
     <Content Include="src/**/**/*.html" />
     <Content Include="src/**/**/*.css" />
-    <Content Include="src\Components\VideoPlayer\video-player.component.d.ts" />
     <Content Include="src\Components\VideoPlayer\video-player.component.ts" />
-    <Content Include="src\Directives\mac-mobile-autoplay.directive.d.ts" />
     <Content Include="src\Directives\mac-mobile-autoplay.directive.ts" />
     <Content Include="src/**/*.ts" />
     <Content Include="src/*" />
