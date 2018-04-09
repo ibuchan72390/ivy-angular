@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.animation-helpers",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Dynamic animation generators for the Ivy C# Angular components",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
