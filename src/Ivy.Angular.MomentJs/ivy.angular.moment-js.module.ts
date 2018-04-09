@@ -46,7 +46,7 @@ export class IvyAngularMomentJsModule {
     // Are we going to need this???
     // I THINK so because we mix components with providers
     // This registers providers at root with components at shared
-    forRoot(): ModuleWithProviders {
+    static forRoot(): ModuleWithProviders {
         return {
             ngModule: IvyAngularMomentJsModule,
             providers: providers
