@@ -14,7 +14,8 @@ export { IvyAngularMomentJsModule } from './ivy.angular.moment-js.module';
 
 
 // Services
-
+export { MomentProviderService } from './src/Services/moment-provider.service';
+export { MomentService } from './src/Services/moment.service';
 
 
 
