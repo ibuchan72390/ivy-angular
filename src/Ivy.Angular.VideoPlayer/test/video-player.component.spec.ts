@@ -53,7 +53,8 @@ describe('VideoPlayerComponent', () => {
             let vidSrc = videoElem.children[i];
 
             // Eventually this should be the VideoSource.Type
-            expect(vidSrc.type).toBe('video/mp4');
+            // Need to go after attributes because PhantomJS doesn't understand vidSrc.type
+            expect(vidSrc.attributes['type'].value).toBe('video/mp4');
 
             sources.splice(vidSrc.src, 1);
         }
