@@ -47,6 +47,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.MomentJs", "src
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.LocalStorage", "src\Ivy.Angular.LocalStorage\Ivy.Angular.LocalStorage.njsproj", "{FB1C0B0A-210C-49E4-9989-A3EC9A5429BA}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.RegexValidators", "src\Ivy.Angular.RegexValidators\Ivy.Angular.RegexValidators.njsproj", "{7970217B-01A6-48E0-85A3-6C79EABF0DCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{FB1C0B0A-210C-49E4-9989-A3EC9A5429BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1C0B0A-210C-49E4-9989-A3EC9A5429BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1C0B0A-210C-49E4-9989-A3EC9A5429BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7970217B-01A6-48E0-85A3-6C79EABF0DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7970217B-01A6-48E0-85A3-6C79EABF0DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7970217B-01A6-48E0-85A3-6C79EABF0DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7970217B-01A6-48E0-85A3-6C79EABF0DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +154,7 @@ Global
 		{0470478E-6C65-40EB-AF7C-98BAC31A76B6} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{54770D58-809B-4CA5-A596-E879C9608129} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{FB1C0B0A-210C-49E4-9989-A3EC9A5429BA} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{7970217B-01A6-48E0-85A3-6C79EABF0DCF} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {179B2D41-C7AA-49E0-AE4D-2F5AA4B6D9E7}
