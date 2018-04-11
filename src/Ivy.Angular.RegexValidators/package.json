@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.regex-validators",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
