@@ -1,5 +1,4 @@
 // Module
-export { IvyAngularRegexValidatorsModule } from './ivy.angular.regex-validators.module';
 
 
 
@@ -24,3 +23,8 @@ export { IvyAngularRegexValidatorsModule } from './ivy.angular.regex-validators.
 
 
 // Models
+
+
+
+// Const
+export { RegexValidators } from './src/Const/regex-validators.const';
