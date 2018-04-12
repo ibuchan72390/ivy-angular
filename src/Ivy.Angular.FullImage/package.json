@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.full-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -24,8 +24,10 @@
     "@angular/common": "^5.2.9",
     "@angular/core": "^5.2.9",
     "core-js": "^2.5.4",
-    "ivy.angular.material.helpers": "1.0.10",
-    "ivy.angular.value-helpers": "1.0.11",
+    "ivy.angular.data": "^1.0.2",
+    "ivy.angular.material.helpers": "^1.0.10",
+    "ivy.angular.value-helpers": "1.0.13",
+    "ivy.angular.web": "^1.0.11",
     "rxjs": "^5.5.8",
     "zone.js": "^0.8.24"
   },
@@ -33,7 +35,7 @@
     "@angular/common": "^5.2.9",
     "@angular/core": "^5.2.9",
     "ivy.angular.material.helpers": "1.0.10",
-    "ivy.angular.value-helpers": "1.0.11"
+    "ivy.angular.value-helpers": "1.0.13"
   },
   "devDependencies": {
     "@angular/compiler": "^5.2.9",
