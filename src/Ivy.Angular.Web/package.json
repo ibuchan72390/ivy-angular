@@ -52,6 +52,7 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
+    "time-fix-plugin": "^2.0.0",
     "typescript": "^2.7.2",
     "webpack": "^4.3.0"
   }

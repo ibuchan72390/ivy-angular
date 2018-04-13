@@ -1,5 +1,5 @@
 var webpack = require('webpack');
-
+const TimeFixPlugin = require('time-fix-plugin');
 const env = 'TEST';
 
 module.exports = () => {

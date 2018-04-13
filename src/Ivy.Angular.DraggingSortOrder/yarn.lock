@@ -2544,7 +2544,7 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-ivy.angular.data@^1.0.2:
+ivy.angular.data@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
@@ -4783,6 +4783,10 @@ ticky@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ticky/-/ticky-1.0.1.tgz#b7cfa71e768f1c9000c497b9151b30947c50e46d"
 
+time-fix-plugin@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/time-fix-plugin/-/time-fix-plugin-2.0.0.tgz#d112f1e415b6ed269e008a42990ddbf8053fc315"
+
 timers-browserify@^1.0.1:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-1.4.2.tgz#c9c58b575be8407375cb5e2462dacee74359f41d"
@@ -5207,6 +5211,6 @@ yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
-"zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
-  version "0.8.20"
-  resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"
+zone.js@^0.8.24:
+  version "0.8.26"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.26.tgz#7bdd72f7668c5a7ad6b118148b4ea39c59d08d2d"

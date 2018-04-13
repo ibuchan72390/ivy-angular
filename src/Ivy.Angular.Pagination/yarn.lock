@@ -3875,7 +3875,7 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-ivy.angular.data@^1.0.1, ivy.angular.data@^1.0.2:
+ivy.angular.data@1.0.2, ivy.angular.data@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
@@ -3901,7 +3901,7 @@ ivy.angular.test-helpers@^1.0.1:
     typescript "^2.7.2"
     zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
 
-ivy.angular.value-helpers@^1.0.11:
+ivy.angular.value-helpers@1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.11.tgz#51bcd7c0a2d5d9f45059800bdb9f17a8bc4b227b"
   dependencies:
@@ -6369,6 +6369,12 @@ rxjs@^5.4.2, rxjs@^5.5.2, rxjs@^5.5.6, rxjs@^5.5.7:
   dependencies:
     symbol-observable "1.0.1"
 
+rxjs@^5.5.10:
+  version "5.5.10"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.10.tgz#fde02d7a614f6c8683d0d1957827f492e09db045"
+  dependencies:
+    symbol-observable "1.0.1"
+
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
@@ -7014,6 +7020,10 @@ through2@^2.0.0:
 thunkify@~2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/thunkify/-/thunkify-2.1.2.tgz#faa0e9d230c51acc95ca13a361ac05ca7e04553d"
+
+time-fix-plugin@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/time-fix-plugin/-/time-fix-plugin-2.0.0.tgz#d112f1e415b6ed269e008a42990ddbf8053fc315"
 
 timed-out@^4.0.0, timed-out@^4.0.1:
   version "4.0.1"

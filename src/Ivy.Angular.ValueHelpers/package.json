@@ -56,6 +56,7 @@
     "karma-typescript": "^3.0.12",
     "karma-webpack": "^3.0.0",
     "requirejs": "^2.3.5",
+    "time-fix-plugin": "^2.0.0",
     "typescript": "^2.7.2",
     "webpack": "^4.3.0"
   }

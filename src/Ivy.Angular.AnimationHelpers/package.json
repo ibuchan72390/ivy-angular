@@ -53,6 +53,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
     "phantomjs-polyfill-find": "^0.0.1",
+    "time-fix-plugin": "^2.0.0",
     "typescript": "^2.7.2",
     "webpack": "^4.3.0"
   }
