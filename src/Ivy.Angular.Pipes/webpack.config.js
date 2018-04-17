@@ -80,7 +80,7 @@ module.exports = () => {
             }),
 
 
-            new TimeFixPluign()
+            new TimeFixPlugin()
         ],
 
 
