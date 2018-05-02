@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.auth0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Data modeling representations of Auth0 objects from Ivy C#",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
