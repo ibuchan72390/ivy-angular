@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.web",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Ivy Web Helpers for @angular",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
