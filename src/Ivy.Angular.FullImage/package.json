@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.full-image",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -58,6 +58,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
     "time-fix-plugin": "^2.0.0",
+    "to-string-loader": "^1.1.5",
     "typescript": "^2.8.1",
     "webpack": "^4.3.0"
   }
