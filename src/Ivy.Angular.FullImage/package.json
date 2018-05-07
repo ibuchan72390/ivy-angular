@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.full-image",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
