@@ -50,8 +50,8 @@ module.exports = () => {
                 },
                 {
                     test: /\.css$/,
-                    use:   'css-loader'
-                },
+                    loaders: ['to-string-loader', 'css-loader']
+                }
             ]
         },
 

@@ -1,5 +1,7 @@
 var webpack = require('webpack');
 
+const TimeFixPlugin = require('time-fix-plugin');
+
 const env = 'TEST';
 
 module.exports = () => {
@@ -70,13 +72,22 @@ module.exports = () => {
             }),
 
 
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            }),
+
+
             /*
              * Typescript source files will not be included without this plugin
              */
             new webpack.SourceMapDevToolPlugin({
                 filename: null, // if no value is provided the sourcemap is inlined
                 test: /\.(ts|js)($|\?)/i // process .js and .ts files only
-            })
+            }),
+
+
+            new TimeFixPlugin()
         ],
 
 

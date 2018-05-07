@@ -1,19 +1,15 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Ivy.Angular.Auth0</Name>
-    <RootNamespace>Ivy.Angular.Auth0</RootNamespace>
-    <EnableTypeScript>true</EnableTypeScript>
-    <TypeScriptSourceMap>true</TypeScriptSourceMap>
-    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
-    <ToolsVersionPromptShown>0.0</ToolsVersionPromptShown>
+    <Name>Ivy.Angular.YouTube</Name>
+    <RootNamespace>Ivy.Angular.YouTube</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>92ec26aa-8f63-48a0-8d09-a7a9c93f1dc7</ProjectGuid>
+    <ProjectGuid>{37f182ed-ecbf-4188-a6ea-8ab037b4fea8}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>
     </StartupFile>
@@ -36,24 +32,25 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
+    <Content Include="index.ts" />
+    <Content Include="karma.conf.js" />
+    <Content Include="ivy.angular.you-tube.module.ts" />
+    <Content Include="webpack.config.js" />
+    <Content Include="src/**/**/*.html" />
+    <Content Include="src\Components\YouTube\you-tube.component.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src/**/**/*.ts" />
+    <Content Include="src/**/*.ts" />
+    <Content Include="src/*" />
+    <Content Include="test/index.ts" />
+    <Content Include="test/*.spec.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\Models\" />
-    <Folder Include="test\" />
     <Folder Include="src\" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="index.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\Models\auth0-geo-ip.model.ts" />
-    <TypeScriptCompile Include="src\Models\auth0-identity.model.ts" />
-    <TypeScriptCompile Include="src\Models\auth0-login-error.model.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\Models\auth0-login-result.model.ts" />
-    <TypeScriptCompile Include="src\Models\auth0-open-id-user.model.ts" />
-    <TypeScriptCompile Include="src\Models\auth0-user.model.ts" />
+    <Folder Include="src\Components\" />
+    <Folder Include="src\Components\YouTube\" />
+    <Folder Include="test\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

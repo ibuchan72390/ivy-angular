@@ -61,6 +61,9 @@
     <TypeScriptCompile Include="ivy.web.module.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="src\Services\window-manipulation.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\Services\window-ref.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
@@ -72,6 +75,9 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\os-detection.service.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\window-manipulation.service.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

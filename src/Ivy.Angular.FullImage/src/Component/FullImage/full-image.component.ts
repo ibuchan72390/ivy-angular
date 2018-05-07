@@ -8,15 +8,16 @@ import { ValidationHelper } from 'ivy.angular.value-helpers';
 
 @Component({
     selector: 'ivy-full-image',
-    templateUrl: './full-image.component.html'
+    templateUrl: './full-image.component.html',
+    styleUrls: [
+        `./full-image.component.css`
+    ]
 })
 export class FullImageComponent implements OnInit {
 
     @Input() src: string;
 
     safeSrc: SafeUrl;
-
-    isLoaded: boolean = false;
 
     constructor(
         private sanitizer: DomSanitizer,
@@ -30,9 +31,5 @@ export class FullImageComponent implements OnInit {
             'FullImageComponent must have a src before the component has been initialized!');
 
         this.safeSrc = this.sanitizer.bypassSecurityTrustUrl(this.src);
-    }
-
-    setLoaded(): void {
-        this.isLoaded = true;
     }
 }

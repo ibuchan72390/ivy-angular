@@ -53,6 +53,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.TestHelpers", "
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.TurnJs", "src\Ivy.Angular.TurnJs\Ivy.Angular.TurnJs.njsproj", "{DBBEA2FA-E0A9-43D5-918F-51F4765D9351}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.YouTube", "src\Ivy.Angular.YouTube\Ivy.Angular.YouTube.njsproj", "{37F182ED-ECBF-4188-A6EA-8AB037B4FEA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -143,6 +145,10 @@ Global
 		{DBBEA2FA-E0A9-43D5-918F-51F4765D9351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBBEA2FA-E0A9-43D5-918F-51F4765D9351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBBEA2FA-E0A9-43D5-918F-51F4765D9351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F182ED-ECBF-4188-A6EA-8AB037B4FEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F182ED-ECBF-4188-A6EA-8AB037B4FEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F182ED-ECBF-4188-A6EA-8AB037B4FEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F182ED-ECBF-4188-A6EA-8AB037B4FEA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,6 +175,7 @@ Global
 		{7970217B-01A6-48E0-85A3-6C79EABF0DCF} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{3FF465EE-3FB6-43A8-8028-81FA001EB2F8} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{DBBEA2FA-E0A9-43D5-918F-51F4765D9351} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{37F182ED-ECBF-4188-A6EA-8AB037B4FEA8} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {179B2D41-C7AA-49E0-AE4D-2F5AA4B6D9E7}
