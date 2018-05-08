@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.caching",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Base caching services for Angular from the Ivy C# framework",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
