@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.video-player",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -24,11 +24,15 @@
     "@angular/common": "^5.2.9",
     "@angular/core": "^5.2.9",
     "@angular/flex-layout": "^5.0.0-beta.14",
-    "angular2-template-loader": "^0.6.2",
     "ivy.angular.web": "^1.0.11",
     "rxjs": "^5.5.10",
     "videogular2": "^6.0.8",
     "zone.js": "^0.8.26"
+  },
+  "peerDependencies": {
+    "@angular/common": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/flex-layout": "^5.0.0"
   },
   "devDependencies": {
     "@angular/cdk": "^5.2.4",
@@ -36,6 +40,7 @@
     "@angular/platform-browser": "^5.2.9",
     "@angular/platform-browser-dynamic": "^5.2.9",
     "@types/jasmine": "^2.8.6",
+    "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^5.0.0",
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
