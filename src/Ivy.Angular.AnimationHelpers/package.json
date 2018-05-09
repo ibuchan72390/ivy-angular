@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.animation-helpers",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Dynamic animation generators for the Ivy C# Angular components",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -21,20 +21,20 @@
     "test-publish": "tsc && npm link"
   },
   "dependencies": {
-    "@angular/animations": "^5.2.9",
-    "@angular/core": "^5.2.9",
+    "@angular/animations": "^5.2.10",
+    "@angular/core": "^5.2.10",
     "rxjs": "^5.5.7",
     "zone.js": "^0.8.24"
   },
   "peerDependencies": {
-    "@angular/animations": "^5.2.9",
-    "@angular/core": "^5.2.9"
+    "@angular/animations": "^5.0.0",
+    "@angular/core": "^5.0.0"
   },
   "devDependencies": {
-    "@angular/common": "^5.2.9",
-    "@angular/compiler": "^5.2.9",
-    "@angular/platform-browser": "^5.2.9",
-    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@angular/common": "^5.2.10",
+    "@angular/compiler": "^5.2.10",
+    "@angular/platform-browser": "^5.2.10",
+    "@angular/platform-browser-dynamic": "^5.2.10",
     "@types/jasmine": "^2.8.6",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^5.0.0-1",
