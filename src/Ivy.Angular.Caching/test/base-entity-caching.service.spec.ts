@@ -188,6 +188,19 @@ describe('BaseEntityCachingService', () => {
 
 
     // getCache
+    it('getCache throws a proper exception if the service has not yet been initialized', () => {
+
+        svc.getCache().subscribe(
+            result => {
+                throw 'unexpected observable result received';
+            },
+            err => {
+
+                expect(err).toBe('Attempting to getCache, but the service has not been initialized!');
+            }
+        );
+    });
+
     it('getCache returns immediately if cache is populated', doneFn => {
 
         svc.externalInit();

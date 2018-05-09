@@ -94,6 +94,12 @@ export abstract class BaseEntityCachingService<TEntity extends BaseEntity> {
 
             return Observable.create((observer: Observer<TEntity[]>) => {
 
+                if (this.rxInWaiting == null) {
+
+                    observer.error('Attempting to getCache, but the service has not been initialized!');
+                    return;
+                }
+
                 this.rxInWaiting.add(
                     (success: TEntity[]) => {
                         observer.next(this.configCache);
