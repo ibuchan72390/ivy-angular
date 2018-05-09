@@ -4,7 +4,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
 // Ng2DeviceDetector
-import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
+import { DeviceDetectorModule } from 'ngx-device-detector';
 
 import { OsDetectionService } from './src/Services/os-detection.service';
 import { BrowserDetectionService } from './src/Services/browser-detection.service';
@@ -14,7 +14,7 @@ import { WindowManipulationService } from './src/Services/window-manipulation.se
 
 // Service Collection
 let imports: any[] = [
-    Ng2DeviceDetectorModule.forRoot()
+    DeviceDetectorModule.forRoot()
 ];
 
 let providers: any[] = [

@@ -4,7 +4,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { IvyWebModule } from '../ivy.web.module';
 
-import { Ng2DeviceService } from 'ng2-device-detector';
+import { DeviceDetectorService } from 'ngx-device-detector';
 import { MobileDetectionService } from '../src/Services/mobile-detection.service';
 
 describe('MobileDetectionService', () => {
@@ -107,7 +107,7 @@ describe('MobileDetectionService', () => {
 
         let newAgentString = 'TEST' + expectedAgentString + 'TEST';
 
-        let deviceSvc = TestBed.get(Ng2DeviceService);
+        let deviceSvc = TestBed.get(DeviceDetectorService);
         deviceSvc.userAgent = newAgentString;
 
         let result = executeFn(sut);

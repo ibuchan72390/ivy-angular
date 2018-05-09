@@ -21,9 +21,9 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@angular/common": "^5.2.9",
-    "@angular/core": "^5.2.9",
-    "ng2-device-detector": "^1.0.1",
+    "@angular/common": "^5.2.10",
+    "@angular/core": "^5.2.10",
+    "ngx-device-detector": "^1.2.2",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.24"
   },
@@ -32,9 +32,9 @@
     "@angular/core": "^5.0.0"
   },
   "devDependencies": {
-    "@angular/compiler": "^5.2.9",
-    "@angular/platform-browser": "^5.2.9",
-    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@angular/compiler": "^5.2.10",
+    "@angular/platform-browser": "^5.2.10",
+    "@angular/platform-browser-dynamic": "^5.2.10",
     "@types/jasmine": "^2.8.6",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^5.0.0-1",

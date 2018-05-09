@@ -4,7 +4,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { IvyWebModule } from '../ivy.web.module';
 import { BrowserDetectionService } from '../src/Services/browser-detection.service';
-import { Ng2DeviceService } from 'ng2-device-detector';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 describe('BrowserDetectionService', () => {
 
@@ -90,7 +90,7 @@ describe('BrowserDetectionService', () => {
         executeFn: (browserDetector: BrowserDetectionService) => boolean,
         expected: boolean) {
 
-        let deviceSvc = TestBed.get(Ng2DeviceService);
+        let deviceSvc = TestBed.get(DeviceDetectorService);
         deviceSvc.browser = expectedAgentString;
 
         expect(executeFn(sut)).toBe(expected);

@@ -1,12 +1,12 @@
 ﻿import { Injectable } from '@angular/core';
 
-import { Ng2DeviceService } from 'ng2-device-detector';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Injectable()
 export class MobileDetectionService {
 
     constructor(
-        private deviceSvc: Ng2DeviceService) {
+        private deviceSvc: DeviceDetectorService) {
     }
 
 
