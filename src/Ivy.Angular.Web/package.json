@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.web",
-  "version": "1.0.16",
+  "version": "1.1.0",
   "description": "Ivy Web Helpers for @angular",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -28,8 +28,8 @@
     "zone.js": "^0.8.24"
   },
   "peerDependencies": {
-    "@angular/common": "^5.2.9",
-    "@angular/core": "^5.2.9"
+    "@angular/common": "^5.0.0",
+    "@angular/core": "^5.0.0"
   },
   "devDependencies": {
     "@angular/compiler": "^5.2.9",
