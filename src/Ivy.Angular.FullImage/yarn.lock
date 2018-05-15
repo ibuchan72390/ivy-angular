@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@angular/common@^5.2.10", "@angular/common@^5.2.9":
+"@angular/common@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.2.10.tgz#828308df8505a31f219a6895ff91dbb178ebac98"
   dependencies:
@@ -14,7 +14,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/core@^5.2.10", "@angular/core@^5.2.9":
+"@angular/core@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.2.10.tgz#a6eba06cae7267efbd2666e3fa5e42b84c2261de"
   dependencies:
@@ -2459,42 +2459,32 @@ ivy.angular.data@1.0.2, ivy.angular.data@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
-ivy.angular.material.helpers@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/ivy.angular.material.helpers/-/ivy.angular.material.helpers-1.0.10.tgz#6c382caeff1745620919976fb6005e254370cf0c"
+ivy.angular.material.helpers@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ivy.angular.material.helpers/-/ivy.angular.material.helpers-1.1.1.tgz#997b51f12da0b380013054c3cec112cfd360fbf7"
   dependencies:
-    "@angular/common" "^5.2.9"
-    "@angular/core" "^5.2.9"
-    ivy.angular.web "1.0.11"
+    "@angular/common" "^5.2.10"
+    "@angular/core" "^5.2.10"
+    ivy.angular.web "^1.1.1"
     rxjs "^5.5.6"
     zone.js "^0.8.24"
 
-ivy.angular.value-helpers@1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.13.tgz#a3f7fb9aa9bff8d3b6ddacff6d08c02913dd9e73"
+ivy.angular.value-helpers@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.1.0.tgz#e3200bae9fdd818ceba72c68809350bcefde94c1"
   dependencies:
-    "@angular/core" "^5.2.9"
+    "@angular/core" "^5.2.10"
     ivy.angular.data "1.0.2"
     rxjs "^5.5.6"
     zone.js "^0.8.24"
 
-ivy.angular.web@1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.0.11.tgz#8709094659f312da5c647bcf7a89134c380c3688"
+ivy.angular.web@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.1.1.tgz#e1f20eefbb90ab8bd62d5f8c9302862b99840e15"
   dependencies:
-    "@angular/common" "^5.2.9"
-    "@angular/core" "^5.2.9"
-    ng2-device-detector "^1.0.1"
-    rxjs "^5.5.6"
-    zone.js "^0.8.24"
-
-ivy.angular.web@^1.0.11:
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.0.16.tgz#97abc767237625371f97bf9e59e51664debe4430"
-  dependencies:
-    "@angular/common" "^5.2.9"
-    "@angular/core" "^5.2.9"
-    ng2-device-detector "^1.0.1"
+    "@angular/common" "^5.2.10"
+    "@angular/core" "^5.2.10"
+    ngx-device-detector "^1.2.2"
     rxjs "^5.5.6"
     zone.js "^0.8.24"
 
@@ -3086,9 +3076,9 @@ next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
 
-ng2-device-detector@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ng2-device-detector/-/ng2-device-detector-1.0.1.tgz#5abbc6380eac8b265f7dded9451a2672c18c8eaf"
+ngx-device-detector@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/ngx-device-detector/-/ngx-device-detector-1.2.2.tgz#0aa3a21280d42bd296c7d4a73ce43e9e3eaf2cb9"
 
 no-case@^2.2.0:
   version "2.3.2"

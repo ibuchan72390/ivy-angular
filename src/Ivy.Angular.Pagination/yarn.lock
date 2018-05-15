@@ -20,7 +20,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/core@^5.2.10", "@angular/core@^5.2.9":
+"@angular/core@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.2.10.tgz#a6eba06cae7267efbd2666e3fa5e42b84c2261de"
   dependencies:
@@ -3677,7 +3677,7 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-ivy.angular.data@1.0.2, ivy.angular.data@^1.0.1:
+ivy.angular.data@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
@@ -3693,13 +3693,12 @@ ivy.angular.test-helpers@^1.0.1:
     rxjs "^5.5.10"
     zone.js "^0.8.26"
 
-ivy.angular.value-helpers@1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.11.tgz#51bcd7c0a2d5d9f45059800bdb9f17a8bc4b227b"
+ivy.angular.value-helpers@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.1.0.tgz#e3200bae9fdd818ceba72c68809350bcefde94c1"
   dependencies:
-    "@angular/core" "^5.2.9"
-    ivy.angular.data "^1.0.1"
-    jasmine-core "^3.1.0"
+    "@angular/core" "^5.2.10"
+    ivy.angular.data "1.0.2"
     rxjs "^5.5.6"
     zone.js "^0.8.24"
 
