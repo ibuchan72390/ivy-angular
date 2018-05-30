@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.turn-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -20,29 +20,26 @@
     "prepublish": "tsc",
     "test-publish": "tsc && npm link"
   },
-  "dependencies": {
-    "@angular/core": "^5.2.10",
-    "@types/jquery": "^3.3.1",
-    "core-js": "^2.5.5",
-    "jquery": "^3.3.1",
-    "rxjs": "^5.5.10",
-    "zone.js": "^0.8.26"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "@angular/core": "^5.0.0"
   },
   "devDependencies": {
     "@angular/common": "^5.2.10",
     "@angular/compiler": "^5.2.10",
+    "@angular/core": "^5.2.10",
     "@angular/platform-browser": "^5.2.10",
     "@angular/platform-browser-dynamic": "^5.2.10",
     "@types/jasmine": "^2.8.6",
+    "@types/jquery": "^3.3.1",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "5.0.0-1",
+    "core-js": "^2.5.5",
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
     "jasmine": "^3.1.0",
     "jasmine-core": "^3.1.0",
+    "jquery": "^3.3.1",
     "karma": "^2.0.2",
     "karma-bamboo-reporter": "^0.1.2",
     "karma-chrome-launcher": "^2.2.0",
@@ -52,8 +49,10 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
+    "rxjs": "^5.5.10",
     "time-fix-plugin": "^2.0.0",
     "typescript": "^2.8.3",
-    "webpack": "^4.6.0"
+    "webpack": "^4.6.0",
+    "zone.js": "^0.8.26"
   }
 }
