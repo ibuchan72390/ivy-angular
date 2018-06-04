@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.turn-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
