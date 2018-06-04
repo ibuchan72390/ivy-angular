@@ -96,7 +96,42 @@ describe('ImgFlipBookComponent', () => {
 
         expect(optionsGenSpy.generateTurnOptions).toHaveBeenCalledTimes(1);
         expect(optionsGenSpy.generateTurnOptions).toHaveBeenCalledWith(
-            sut.flipbookContainerElem.nativeElement.clientWidth, maxWidth, ratio);
+            sut.flipbookContainerElem.nativeElement.clientWidth, maxWidth, ratio, undefined);
+
+        expect(turnInvokerSpy.invokeTurn).toHaveBeenCalledTimes(1);
+        expect(turnInvokerSpy.invokeTurn).toHaveBeenCalledWith(
+            sut.flipbookElem, options);
+    });
+
+    it('afterViewInit executes as expected with override', () => {
+
+        const maxWidth: number = 1000;
+        const ratio: number = 2;
+
+        let imgSrcs = [
+            'https://img-aws.ehowcdn.com/750x428p/cpi.studiod.com/www_ehow_com/i.ehow.com/images/a06/3a/be/study-compass-math-placement-test-800x800.jpg',
+            'http://eventzerz.com/wp-content/uploads/2018/03/Test-Logo-Small-Black-transparent-1.png',
+            'https://images.sftcdn.net/images/t_optimized,f_auto/p/befbcde0-9b36-11e6-95b9-00163ed833e7/260663710/the-test-fun-for-friends-screenshot.jpg',
+            'https://lacphoto.org/berenice/wp-content/uploads/Test-Logo.svg.png',
+            'https://vignette.wikia.nocookie.net/googology/images/f/f3/Test.jpeg/revision/latest?cb=20180121032443',
+            'http://wp.patheos.com.s3.amazonaws.com/blogs/faithwalkers/files/2013/03/bigstock-Test-word-on-white-keyboard-27134336.jpg'
+        ];
+
+        let override = {
+            test: 'testing'
+        };
+
+        sut.imgSources = imgSrcs;
+        sut.imgHeightToWidthRatio = ratio;
+        sut.maxPxWidth = maxWidth;
+        sut.optionsOverrides = override;
+
+        fixture.detectChanges();
+
+        expect(optionsGenSpy.generateTurnOptions).toHaveBeenCalledTimes(1);
+        expect(optionsGenSpy.generateTurnOptions).toHaveBeenCalledWith(
+            sut.flipbookContainerElem.nativeElement.clientWidth, maxWidth,
+            ratio, override);
 
         expect(turnInvokerSpy.invokeTurn).toHaveBeenCalledTimes(1);
         expect(turnInvokerSpy.invokeTurn).toHaveBeenCalledWith(

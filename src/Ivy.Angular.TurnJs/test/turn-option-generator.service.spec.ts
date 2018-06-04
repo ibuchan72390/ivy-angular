@@ -26,35 +26,79 @@ describe('TurnOptionGeneratorService', () => {
 
 
     // Tests
-    it('generateTurnOptions works as expected when width < maxWidth', () => {
+    describe('generateTurnOptions', () => { 
 
-        let width = 500;
-        let maxWidth = 1000;
-        let heightToWidthRatio = 2;
+        it('generateTurnOptions works as expected when width < maxWidth', () => {
 
-        var result = sut.generateTurnOptions(width, maxWidth, heightToWidthRatio);
+            let width = 500;
+            let maxWidth = 1000;
+            let heightToWidthRatio = 2;
 
-        expect(result.width).toBe(width);
+            var result = sut.generateTurnOptions(width, maxWidth, heightToWidthRatio);
 
-        let expectedHeight = heightToWidthRatio * (width / 2);
+            expect(result.width).toBe(width);
 
-        expect(result.height).toBe(expectedHeight);
-        expect(result.autoCenter).toBeTruthy();
-    });
+            let expectedHeight = heightToWidthRatio * (width / 2);
 
-    it('generateTurnOptions works as expected when width > maxWidth', () => {
+            expect(result.height).toBe(expectedHeight);
+            expect(result.autoCenter).toBeTruthy();
+        });
 
-        let maxWidth = 500;
-        let width = 1000;
-        let heightToWidthRatio = 2;
+        it('generateTurnOptions works as expected when width > maxWidth', () => {
 
-        var result = sut.generateTurnOptions(width, maxWidth, heightToWidthRatio);
+            let maxWidth = 500;
+            let width = 1000;
+            let heightToWidthRatio = 2;
 
-        expect(result.width).toBe(maxWidth);
+            var result = sut.generateTurnOptions(width, maxWidth, heightToWidthRatio);
 
-        let expectedHeight = heightToWidthRatio * (maxWidth / 2);
+            expect(result.width).toBe(maxWidth);
 
-        expect(result.height).toBe(expectedHeight);
-        expect(result.autoCenter).toBeTruthy();
+            let expectedHeight = heightToWidthRatio * (maxWidth / 2);
+
+            expect(result.height).toBe(expectedHeight);
+            expect(result.autoCenter).toBeTruthy();
+        });
+
+        it('generateTurnOptions works as expected when override adds options', () => {
+
+            let width = 500;
+            let maxWidth = 1000;
+            let heightToWidthRatio = 2;
+
+            let overrides = {
+                test: 'testing-attribute'
+            };
+
+            var result = sut.generateTurnOptions(width, maxWidth, heightToWidthRatio, overrides);
+
+            expect(result.width).toBe(width);
+
+            let expectedHeight = heightToWidthRatio * (width / 2);
+
+            expect(result.height).toBe(expectedHeight);
+            expect(result.autoCenter).toBeTruthy();
+            expect(result.test).toBe(overrides.test);
+        });
+
+        it('generateTurnOptions works as expected when override edits options', () => {
+
+            let width = 500;
+            let maxWidth = 1000;
+            let heightToWidthRatio = 2;
+
+            let overrides = {
+                autoCenter: false
+            };
+
+            var result = sut.generateTurnOptions(width, maxWidth, heightToWidthRatio, overrides);
+
+            expect(result.width).toBe(width);
+
+            let expectedHeight = heightToWidthRatio * (width / 2);
+
+            expect(result.height).toBe(expectedHeight);
+            expect(result.autoCenter).toBeFalsy();
+        });
     });
 });

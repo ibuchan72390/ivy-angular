@@ -37,6 +37,9 @@ export class ImgFlipBookComponent {
     imgHeightToWidthRatio: number;
 
     @Input()
+    optionsOverrides: object;
+
+    @Input()
     imgSources: string[];
 
 
@@ -50,7 +53,7 @@ export class ImgFlipBookComponent {
 
         let opts = this.optionsGen.generateTurnOptions(
             this.flipbookContainerElem.nativeElement.clientWidth,
-            this.maxPxWidth, this.imgHeightToWidthRatio);
+            this.maxPxWidth, this.imgHeightToWidthRatio, this.optionsOverrides);
 
         this.turnInvoker.invokeTurn(this.flipbookElem, opts);
     }
