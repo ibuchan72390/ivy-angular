@@ -49,4 +49,32 @@ describe('FullImageComponent', () => {
 
         expect(imgElem.src).toEqual(sut.src);
     });
+
+    it('FullImageComponent returns 98% for width if no override is provided', () => {
+
+        sut.src = "http://hanassets.nd.gov/images/product/test.png";
+
+        expect(sut.getWidthOverride()).toBe('98%');
+
+        fixture.detectChanges();
+
+        let imgElem = fixture.debugElement.nativeElement.querySelector('img');
+
+        expect(imgElem.style.width).toBe('98%');
+    });
+
+    it('FullImageComponent returns override if provided', () => {
+
+        sut.src = "http://hanassets.nd.gov/images/product/test.png";
+
+        sut.widthOverride = '100%';
+
+        expect(sut.getWidthOverride()).toBe(sut.widthOverride);
+
+        fixture.detectChanges();
+
+        let imgElem = fixture.debugElement.nativeElement.querySelector('img');
+
+        expect(imgElem.style.width).toBe(sut.widthOverride);
+    });
 });

@@ -16,6 +16,7 @@ import { ValidationHelper } from 'ivy.angular.value-helpers';
 export class FullImageComponent implements OnInit {
 
     @Input() src: string;
+    @Input() widthOverride: string;
 
     safeSrc: SafeUrl;
 
@@ -24,6 +25,13 @@ export class FullImageComponent implements OnInit {
         private validationHelper: ValidationHelper) {
     }
 
+    getWidthOverride(): string {
+
+        if (this.widthOverride)
+            return this.widthOverride;
+
+        return '98%';
+    }
 
     ngOnInit(): void {
 
