@@ -50,6 +50,7 @@
   <ItemGroup>
     <Folder Include="src\" />
     <Folder Include="src\Components\" />
+    <Folder Include="src\Components\UtcServerDateTimeAgoDisplay\" />
     <Folder Include="src\Components\UtcServerDateTimeDisplay\" />
     <Folder Include="src\Components\UtcServerDateDisplay\" />
     <Folder Include="src\Pipes\" />

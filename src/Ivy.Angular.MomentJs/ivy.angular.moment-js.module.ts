@@ -13,6 +13,7 @@ import { MomentService } from './src/Services/moment.service';
 
 import { IvyAngularUtcServerDateDisplayComponent } from './src/Components/UtcServerDateDisplay/utc-server-date-display.component';
 import { IvyAngularUtcServerDateTimeDisplayComponent } from './src/Components/UtcServerDateTimeDisplay/utc-server-date-time-display.component';
+import { IvyAngularUtcServerDateTimeAgoDisplayComponent } from './src/Components/UtcServerDateTimeAgoDisplay/utc-server-date-time-ago-display.component';
 
 import { IvyAngularMomentTimezonePipe } from './src/Pipes/moment-timezone.pipe';
 
@@ -31,6 +32,7 @@ let providers: any[] = [
 let declarations: any[] = [
     IvyAngularUtcServerDateDisplayComponent,
     IvyAngularUtcServerDateTimeDisplayComponent,
+    IvyAngularUtcServerDateTimeAgoDisplayComponent,
     IvyAngularMomentTimezonePipe
 ];
 
