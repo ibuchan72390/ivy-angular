@@ -1,13 +1,14 @@
 <div style="width: 100%;"
-     #flipbookContainer>
+     #flipbookContainer
+     *ngIf="ready()">
 
     <div id="flipbookElem"
          #flipbook>
 
-        <div *ngFor="let source of imgSources">
+        <div *ngFor="let source of massagedSources">
 
             <img style="width: 100%; height: auto;"
-                 src="{{source}}" />
+                 [src]="source" />
         </div>
 
     </div>
