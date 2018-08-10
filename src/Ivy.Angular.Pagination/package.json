@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.pagination",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Client side components for that leverage Ivy C# pagination without material design",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -25,7 +25,7 @@
     "@angular/core": "^5.2.10",
     "@angular/platform-browser": "^5.2.10",
     "ivy.angular.data": "1.0.2",
-    "ivy.angular.value-helpers": "^1.1.0",
+    "ivy.angular.value-helpers": "^1.1.1",
     "jasmine-core": "^3.1.0",
     "rxjs": "^5.5.10"
   },
