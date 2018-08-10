@@ -71,6 +71,9 @@
     <TypeScriptCompile Include="src\Services\moment.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="test\moment-provider.service.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="test\moment-timezone.pipe.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>

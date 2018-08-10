@@ -71,6 +71,44 @@ describe('MomentService', () => {
         expect(tzChangeSpy).toHaveBeenCalledWith(date, timezone);
     });
 
+    it('changeToGuessMyTimezone executes as expected', () => {
+
+        const date: Date = new Date();
+        const momentDate = new Date(2012, 10, 10);
+        const finalDate: Date = new Date(2011, 10, 10);
+
+        const tz: string = 'tz';
+
+        let tzGuessSpy = jasmine.createSpy().and.returnValue(tz);;
+        let tzAdjustSpy = jasmine.createSpy().and.returnValue(finalDate);
+
+        let momentGuessSpy: any = {
+            tz: {
+                guess: tzGuessSpy,
+            }
+        };
+
+        let momentTzSpy: any = {
+            tz: tzAdjustSpy
+        };
+
+        spyOn(providerSvc, 'getMomentTz').and.returnValues(momentGuessSpy, momentTzSpy);
+        spyOn(providerSvc, 'getMomentDate').and.returnValue(momentDate)
+
+        let result = sut.changeToMyGuessTimezone(date);
+
+        expect(result).toBe(finalDate);
+
+        expect(providerSvc.getMomentTz).toHaveBeenCalledTimes(2);
+        expect(tzGuessSpy).toHaveBeenCalledTimes(1);
+
+        expect(providerSvc.getMomentDate).toHaveBeenCalledTimes(1);
+        expect(providerSvc.getMomentDate).toHaveBeenCalledWith(date);
+
+        expect(tzAdjustSpy).toHaveBeenCalledTimes(1);
+        expect(tzAdjustSpy).toHaveBeenCalledWith(momentDate, tz);
+    });
+
     // Holy fucking mock test
     it('getTimeSpanDiff executes as expected', () => {
 

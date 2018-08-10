@@ -19,7 +19,7 @@ export class MomentProviderService {
         return momentTz;
     }
 
-    getMomentDate(date: Date, format: string): any {
+    getMomentDate(date: Date = new Date(), format: string = null): any {
         return moment(date, format);
     }
 }

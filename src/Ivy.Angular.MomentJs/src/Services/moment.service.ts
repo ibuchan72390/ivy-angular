@@ -15,30 +15,6 @@ export class MomentService {
     // As such, when we adjust the date on our MomentJS Library, then we need to also adjust it on the Material DateAdapter
     // https://material.angular.io/components/datepicker/overview#setting-the-locale-code
 
-
-    // This needs to be relocated to some type of moment initialization service
-    // That way, whenever we switch contexts in IAGE, we can properly reinit the moment functionality
-    //init(langType: string): void {
-
-    //    switch (langType) {
-    //        case (LanguageTypeName.english):
-
-    //            moment.locale('en');
-    //            this.dateAdapter.setLocale('en');
-
-    //            return;
-    //        case (LanguageTypeName.spanish):
-
-    //            moment.locale('es');
-    //            this.dateAdapter.setLocale('es');
-
-    //            break;
-    //        default:
-    //            throw new Error('Unmapped LanguageTypeName received in MomentService!' +
-    //                ' Received: ' + langType);
-    //    }
-    //}
-
     constructor(
         private momentProvider: MomentProviderService) {
     }
@@ -52,6 +28,13 @@ export class MomentService {
         let momentTz = this.momentProvider.getMomentTz();
 
         return momentTz.tz.guess();
+    }
+
+    changeToMyGuessTimezone(date: Date): any {
+
+        let tz = this.guessMyTimezone();
+        let momentDate = this.momentProvider.getMomentDate(date);
+        return this.changeToTimezone(momentDate, tz);
     }
 
     changeToTimezone(date: Date, timezone: string): any {
