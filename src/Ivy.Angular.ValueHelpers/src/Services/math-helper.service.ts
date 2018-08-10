@@ -14,4 +14,20 @@ export class MathHelper {
     ceil(val: number): number {
         return Math.ceil(val);
     }
+
+    round(val: number): number {
+        return Math.round(val);
+    }
+
+    pow(val: number, power: number): number {
+        return Math.pow(val, power);    
+    }
+
+    roundDecimal(val: number, decimals: number): number {
+
+        let roundPow = this.pow(10, decimals);
+        let toRound = roundPow * val;
+        toRound = this.round(toRound);
+        return toRound / roundPow;
+    }
 }
