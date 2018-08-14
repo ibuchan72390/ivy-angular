@@ -2459,9 +2459,9 @@ ivy.angular.data@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
-ivy.angular.value-helpers@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.1.0.tgz#e3200bae9fdd818ceba72c68809350bcefde94c1"
+ivy.angular.value-helpers@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.1.1.tgz#0777ea4f5e07bcd47b30418d78beb5462a7b62d8"
   dependencies:
     "@angular/core" "^5.2.10"
     ivy.angular.data "1.0.2"
