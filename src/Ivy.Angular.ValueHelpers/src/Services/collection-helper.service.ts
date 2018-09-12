@@ -7,6 +7,7 @@ import { BaseEnumEntity } from 'ivy.angular.data';
 export class CollectionHelper {
 
     range(count: number, start: number = 0): number[] {
+
         let arr = Array.from(new Array(count).keys());
 
         if (start != 0) {
@@ -46,7 +47,20 @@ export class CollectionHelper {
     }
 
     remove<T>(coll: T[], item: T): void {
+
         coll.splice(coll.indexOf(item), 1);
+    }
+
+    removeEntity<T extends BaseEntity>(coll: T[], item: T): void {
+
+        for (var i = 0; i < coll.length; i++) {
+
+            if (coll[i].id == item.id) {
+
+                coll.splice(i, 1);
+                return;
+            }
+        }
     }
 
     getEntityById<T extends BaseEntity>(coll: T[], id: number): T {
@@ -71,16 +85,9 @@ export class CollectionHelper {
         return null;
     }
 
-    removeEntity<T extends BaseEntity>(coll: T[], item: T): void {
+    contains<T>(coll: T[], item: T): boolean {
 
-        for (var i = 0; i < coll.length; i++) {
-
-            if (coll[i].id == item.id) {
-
-                coll.splice(i, 1);
-                return;
-            }
-        }
+        return coll.indexOf(item) > -1;
     }
 
     containsEntity<T extends BaseEntity>(coll: T[], item: T): boolean {
@@ -96,6 +103,15 @@ export class CollectionHelper {
         return false;
     }
 
+    addOrRemove<T>(coll: T[], item: T): void {
+
+        if (this.contains(coll, item)) {
+            this.remove(coll, item);
+        } else {
+            coll.push(item);
+        }
+    }
+
     addOrRemoveEntity<T extends BaseEntity>(coll: T[], item: T): void {
 
         if (this.containsEntity(coll, item)) {
@@ -105,6 +121,63 @@ export class CollectionHelper {
         }
     }
 
+    intersect<T>(coll1: T[], coll2: T[]): T[] {
+
+        var results = [];
+
+        for (var i = 0; i < coll1.length; i++) {
+
+            if (this.contains(coll2, coll1[i])) {
+                results.push(coll1[i]);
+            }
+        }
+
+        return results;
+    }
+
+    intersectEntities<T extends BaseEntity>(coll1: T[], coll2: T[]): T[] {
+
+        var results = [];
+
+        for (var i = 0; i < coll1.length; i++) {
+
+            if (this.containsEntity(coll2, coll1[i])) {
+                results.push(coll1[i]);
+            }
+        }
+
+        return results;
+    }
+
+    exclude<T>(coll1: T[], coll2: T[]): T[] {
+
+        var results = [];
+
+        for (var i = 0; i < coll1.length; i++) {
+
+            if (!this.contains(coll2, coll1[i])) {
+
+                results.push(coll1[i]);
+            }
+        }
+
+        return results;
+    }
+
+    excludeEntities<T extends BaseEntity>(coll1: T[], coll2: T[]): T[] {
+
+        var results = [];
+
+        for (var i = 0; i < coll1.length; i++) {
+
+            if (!this.containsEntity(coll2, coll1[i])) {
+
+                results.push(coll1[i]);
+            }
+        }
+
+        return results;
+    }
 
     private internalMax<T>(col: T[]): T {
 

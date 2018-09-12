@@ -7230,7 +7230,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-videogular2@^6.0.8:
+videogular2@6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/videogular2/-/videogular2-6.1.1.tgz#df1cb08a6fb8a70f2c6c649e702c4de01f74a27c"
 
