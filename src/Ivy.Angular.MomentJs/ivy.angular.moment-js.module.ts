@@ -5,8 +5,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 
-import { MomentTimezoneModule } from 'angular-moment-timezone';
-import { MomentModule } from 'angular2-moment';
+import { MomentModule } from 'ngx-moment';
 
 import { MomentProviderService } from './src/Services/moment-provider.service';
 import { MomentService } from './src/Services/moment.service';
@@ -20,8 +19,7 @@ import { IvyAngularMomentTimezonePipe } from './src/Pipes/moment-timezone.pipe';
 // Service Collection
 let imports: any[] = [
     CommonModule,
-    MomentModule,
-    MomentTimezoneModule
+    MomentModule
 ];
 
 let providers: any[] = [

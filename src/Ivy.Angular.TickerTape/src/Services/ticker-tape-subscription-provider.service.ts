@@ -1,6 +1,6 @@
-﻿import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-import { Observable, Observer } from 'rxjs';
+import { interval, Observable } from 'rxjs';
 
 import { TickerTapeTextService } from './ticker-tape-text.service';
 
@@ -9,16 +9,16 @@ export class TickerTapeSubscriptionProvider {
 
     constructor(
         private tickTextSvc: TickerTapeTextService) {
-        
+
     }
 
     getTickerTapeSubscription(tickText: string, charLen: number, tickMs: number): Observable<string> {
 
         let adjustedText = this.tickTextSvc.prepareTickerText(tickText, charLen);
 
-        return Observable.create((observer: Observer<string>) => {
+        return Observable.create((observer: any) => {
 
-            Observable.interval(tickMs).subscribe(
+            interval(tickMs).subscribe(
                 (tick: number) => {
 
                     let newText = this.tickTextSvc.getText(

@@ -5,7 +5,7 @@ import { TestBed, ComponentFixture } from '@angular/core/testing';
 
 import { IvyAngularMomentJsModule } from '../ivy.angular.moment-js.module';
 
-import { FromUtcPipe, LocalTimePipe, DateFormatPipe } from 'angular2-moment';
+import { FromUtcPipe, LocalTimePipe, DateFormatPipe } from 'ngx-moment';
 
 import { IvyAngularUtcServerDateTimeAgoDisplayComponent } from '../src/Components/UtcServerDateTimeAgoDisplay/utc-server-date-time-ago-display.component';
 

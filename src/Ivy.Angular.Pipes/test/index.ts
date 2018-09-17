@@ -21,7 +21,7 @@ import 'zone.js/dist/async-test';
 import 'zone.js/dist/fake-async-test';
 
 // RxJS
-import 'rxjs/Rx';
+import 'rxjs';
 
 // Angular
 import { TestBed } from '@angular/core/testing';
