@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.video-player",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -24,7 +24,7 @@
     "@angular/core": "^6.0.0",
     "@angular/flex-layout": "6.0.0-beta.18",
     "ivy.angular.web": "2.0.0",
-    "videogular2": "6.1.1"
+    "videogular2": "^6.3.0"
   },
   "devDependencies": {
     "@angular/cdk": "^6.4.7",
