@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.html-display",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Ivy.Angular.HtmlDisplay",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -21,7 +21,7 @@
     "test-publish": "tsc && npm link"
   },
   "peerDependencies": {
-    "@angular/core": "6.0.0"
+    "@angular/core": "^6.0.0"
   },
   "devDependencies": {
     "@angular/cli": "^6.2.2",
