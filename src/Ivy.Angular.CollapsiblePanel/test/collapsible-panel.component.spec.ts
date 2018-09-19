@@ -1,6 +1,6 @@
 ﻿import 'jasmine';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -20,7 +20,8 @@ describe('CollapsiblePanelComponent', () => {
 
         TestBed.configureTestingModule({
             imports: [
-                BrowserAnimationsModule,
+                //BrowserAnimationsModule, - This does not seem to work here
+                NoopAnimationsModule,
                 IvyAngularCollapsiblePanelModule
             ]
         });
