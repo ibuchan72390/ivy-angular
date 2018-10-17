@@ -18,6 +18,7 @@ import {
 } from 'ivy.angular.data';
 
 import { MathHelper } from 'ivy.angular.value-helpers';
+import { Observable, Observer } from 'rxjs';
 
 
 /**
@@ -113,18 +114,28 @@ export class ScrollingLoadComponent implements OnInit, AfterViewChecked {
         }
     }
 
-    getHeight(): string {
+    getHeight(): Observable<string> {
 
         // This seems to raise an issue with ExpressionChangedAfterItHasBeenCheckedError
         // Not exactly sure why, but first we need to have the max-height 100% to determine page height
         // After we have page height, we can set that as the max height
-        if (this.maxHeight == null && !this.pageHeight) {
-            return '100%';
-        } else if (this.pageHeight) {
-            return this.pageHeight + 'px';
-        } else { 
-           return this.maxHeight + 'px';
-        }
+
+        return Observable.create((observer: Observer<string>) => {
+
+            setTimeout(() => { 
+
+                if (this.maxHeight == null && !this.pageHeight) {
+                    observer.next('100%');
+                } else if (this.pageHeight) {
+                    observer.next(this.pageHeight + 'px');
+                } else {
+                    observer.next(this.maxHeight + 'px');
+                }
+
+                observer.complete();
+            });
+        });
+
     }
     
     private emitPageReq(): void {

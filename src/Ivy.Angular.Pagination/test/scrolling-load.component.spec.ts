@@ -242,16 +242,21 @@ describe('ScrollingLoadComponent', () => {
     });
 
     // getHeight
-    it('getHeight returns 100% if maxHeight and page height are empty', () => {
+    it('getHeight returns 100% if maxHeight and page height are empty', doneFn => {
 
         component.maxHeight = null;
 
-        let result = component.getHeight();
+        component.getHeight().subscribe(
+            result => {
 
-        expect(result).toBe('100%');
+                expect(result).toBe('100%');
+
+                doneFn();
+            }
+        );
     });
 
-    it('getHeight returns pageHeight px if provided', () => {
+    it('getHeight returns pageHeight px if provided', doneFn => {
 
         component.containerDiv = {
             nativeElement: {
@@ -263,18 +268,27 @@ describe('ScrollingLoadComponent', () => {
 
         component.ngAfterViewChecked();
 
-        let result = component.getHeight();
+        component.getHeight().subscribe(
+            result => {
 
-        expect(result).toBe(component.containerDiv.nativeElement.clientHeight + 'px');
+                expect(result).toBe(component.containerDiv.nativeElement.clientHeight + 'px');
+
+                doneFn();
+            }
+        );
     });
 
-    it('getHeight returns maxHeight px if no pageHeight provided', () => {
+    it('getHeight returns maxHeight px if no pageHeight provided', doneFn => {
 
         component.maxHeight = 100;
 
-        let result = component.getHeight();
+        component.getHeight().subscribe(
+            result => {
 
-        expect(result).toBe(component.maxHeight + 'px');
+                expect(result).toBe(component.maxHeight + 'px');
+
+                doneFn();
+            }
+        );
     });
-
 });

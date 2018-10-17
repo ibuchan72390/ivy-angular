@@ -2,6 +2,7 @@
 
 // Angular
 import { NgModule, ModuleWithProviders } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 // Components
 import { ScrollingLoadComponent } from './src/Components/ScrollingLoad/scrolling-load.component';
@@ -14,6 +15,9 @@ let declarations: any[] = [
 
 // NgModule
 @NgModule({
+    imports: [
+        CommonModule
+    ],
     declarations: declarations,
     exports: declarations
 })

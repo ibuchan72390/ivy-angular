@@ -7,7 +7,7 @@
       
 -->
 
-<div [style.max-height]="getHeight()" 
+<div [style.max-height]="getHeight() | async" 
      style="overflow-y: scroll; height: 100%;"
      class="full-width"
      #scrollcontainer
