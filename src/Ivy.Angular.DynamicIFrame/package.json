@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.dynamic-i-frame",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "@angular/core": "^6.0.0",
-    "ivy.angular.value-helpers": "2.0.1",
+    "ivy.angular.value-helpers": "2.0.2",
     "ivy.angular.web": "2.0.0"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
     "ivy.angular.data": "^1.0.2",
-    "ivy.angular.value-helpers": "2.0.1",
+    "ivy.angular.value-helpers": "2.0.2",
     "ivy.angular.web": "2.0.0",
     "jasmine": "^3.1.0",
     "jasmine-core": "^3.1.0",
