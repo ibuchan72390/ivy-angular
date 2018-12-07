@@ -14,7 +14,7 @@ export class SortOrderService {
     sortCollection<T extends SortOrder>(items: T[]): void {
 
         items = items.sort((obj1: T, obj2: T) => {
-            if (obj1.sortOrder > obj2.sortOrder) {
+            if (obj1.sortOrder >= obj2.sortOrder) {
                 return 1;
             } else {
                 return -1;

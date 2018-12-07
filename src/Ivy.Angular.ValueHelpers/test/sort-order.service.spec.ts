@@ -15,6 +15,31 @@ describe('SortOrderService', () => {
 
 
     // sortCollection
+    it('sortCollection returns the same list if all sort order values are equal', () => {
+
+        const toMake = 5;
+
+        var sortables = Array.from(new Array(toMake).keys()).
+            map((val, index) => index).
+            map(x => {
+                let item = new SortClass();
+                item.sortOrder = 0;
+                return item;
+            });
+
+        var sortableCopy = [];
+
+        for (var i = 0; i < sortables.length; i++){
+            sortableCopy.push(sortables[i]);
+        }
+
+        sut.sortCollection(sortables);
+
+        for (var i = 0; i < toMake; i++) {
+            expect(sortables[i]).toBe(sortableCopy[i]);
+        }
+    });
+
     it('sortCollection returns sort order ordered by ascending', () => {
 
         const toMake = 5;
