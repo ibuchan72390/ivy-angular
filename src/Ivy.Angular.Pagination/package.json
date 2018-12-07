@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.pagination",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Client side components for that leverage Ivy C# pagination without material design",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "@angular/core": "^6.0.0",
-    "ivy.angular.value-helpers": "2.0.1"
+    "ivy.angular.value-helpers": "2.0.2"
   },
   "devDependencies": {
     "@angular/cdk": "^6.4.7",
@@ -40,7 +40,7 @@
     "html-loader": "^0.5.5",
     "ivy.angular.data": "1.0.2",
     "ivy.angular.test-helpers": "^2.0.2",
-    "ivy.angular.value-helpers": "2.0.1",
+    "ivy.angular.value-helpers": "2.0.2",
     "jasmine": "^3.1.0",
     "jasmine-core": "^3.1.0",
     "karma": "^2.0.0",
